@@ -1,0 +1,204 @@
+==> /var/log/auth.log <==
+Dec  6 10:33:31 xubuntu systemd-logind[3919]: New seat seat0.
+Dec  6 10:33:31 xubuntu systemd-logind[3919]: Watching system buttons on /dev/input/event2 (Power Button)
+Dec  6 10:33:31 xubuntu systemd-logind[3919]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec  6 10:33:31 xubuntu systemd-logind[3919]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Dec  6 10:33:32 xubuntu lightdm: pam_unix(lightdm-autologin:session): session opened for user xubuntu by (uid=0)
+Dec  6 10:33:32 xubuntu systemd-logind[3919]: New session c1 of user xubuntu.
+Dec  6 10:33:32 xubuntu systemd: pam_unix(systemd-user:session): session opened for user xubuntu by (uid=0)
+Dec  6 10:33:33 xubuntu gnome-keyring-daemon[4325]: couldn't access control socket: /run/user/999/keyring/control: No such file or directory
+Dec  6 10:33:33 xubuntu gnome-keyring-daemon[4326]: couldn't access control socket: /run/user/999/keyring/control: No such file or directory
+Dec  6 10:33:33 xubuntu gnome-keyring-daemon[4325]: The SSH agent was already initialized
+Dec  6 10:33:33 xubuntu gnome-keyring-daemon[4325]: The Secret Service was already initialized
+Dec  6 10:33:33 xubuntu gnome-keyring-daemon[4325]: The PKCS#11 component was already initialized
+Dec  6 10:33:33 xubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.30 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Dec  6 10:33:59 xubuntu dbus[3931]: [system] Failed to activate service 'org.bluez': timed out
+Dec  6 08:34:25 xubuntu dbus[3931]: [system] Failed to activate service 'org.bluez': timed out
+Dec  6 08:36:26 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/home/xubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+Dec  6 08:36:26 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 08:36:30 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 08:40:24 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/home/xubuntu ; USER=root ; COMMAND=/usr/bin/apt-get -y install sysinfo
+Dec  6 08:40:24 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 08:40:36 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:01:41 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/home/xubuntu ; USER=root ; COMMAND=/usr/bin/apt-get -y install puppet
+Dec  6 09:01:41 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:01:46 xubuntu groupadd[10286]: group added to /etc/group: name=puppet, GID=129
+Dec  6 09:01:46 xubuntu groupadd[10286]: group added to /etc/gshadow: name=puppet
+Dec  6 09:01:46 xubuntu groupadd[10286]: new group: name=puppet, GID=129
+Dec  6 09:01:46 xubuntu useradd[10290]: new user: name=puppet, UID=121, GID=129, home=/var/lib/puppet, shell=/bin/false
+Dec  6 09:01:46 xubuntu usermod[10295]: change user 'puppet' password
+Dec  6 09:01:46 xubuntu chage[10300]: changed password expiry for puppet
+Dec  6 09:01:46 xubuntu chfn[10303]: changed user 'puppet' information
+Dec  6 09:01:48 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:02:34 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/home/xubuntu/Downloads/puppet-sdc-dist/modules ; USER=root ; COMMAND=/bin/cp -r auditd/ /etc/puppet/modules/
+Dec  6 09:02:34 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:02:34 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:11:25 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:11:25 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:17:01 xubuntu CRON[10581]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec  6 09:17:01 xubuntu CRON[10581]: pam_unix(cron:session): session closed for user root
+Dec  6 09:18:19 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:20:26 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd}
+Dec  6 09:20:26 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:20:27 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:20:46 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:20:46 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:20:48 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:29:04 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:29:04 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:32:32 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:33:36 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:33:36 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:33:37 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:34:03 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:34:03 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:35:53 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:35:55 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:35:55 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:35:56 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:36:22 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:36:22 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:37:04 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:37:06 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:37:06 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:37:11 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:44:32 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:44:32 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:46:25 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:46:28 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:46:28 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:46:29 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:48:08 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:48:08 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:49:28 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:49:31 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:49:31 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:49:32 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:49:38 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:49:38 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:49:40 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:52:55 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/bin/nano init.pp
+Dec  6 09:52:55 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:53:11 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:53:13 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/puppet apply -e class {auditd:}
+Dec  6 09:53:13 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:53:15 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:53:59 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/sbin/aureport
+Dec  6 09:53:59 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:53:59 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:59:21 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/etc/puppet/modules/auditd/manifests ; USER=root ; COMMAND=/usr/bin/apt-get -y install git
+Dec  6 09:59:21 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+Dec  6 09:59:25 xubuntu sudo: pam_unix(sudo:session): session closed for user root
+Dec  6 09:59:46 xubuntu sudo:  xubuntu : TTY=pts/6 ; PWD=/home/xubuntu ; USER=root ; COMMAND=/usr/bin/tail --lines=100 /home/*/.bash_history /var/log/auth.log /var/log/apache2/*.log /var/log/syslog /var/log/installer/syslog /proc/uptime /etc/lsb-release
+Dec  6 09:59:46 xubuntu sudo: pam_unix(sudo:session): session opened for user root by xubuntu(uid=0)
+
+==> /var/log/syslog <==
+Dec  6 09:37:10 xubuntu systemd[1]: Started CUPS Scheduler.
+Dec  6 09:37:10 xubuntu systemd[1]: Reloading.
+Dec  6 09:37:10 xubuntu systemd[1]: snapd.refresh.timer: Adding 4h 57min 53.767959s random time.
+Dec  6 09:37:10 xubuntu systemd[1]: Started ACPI event daemon.
+Dec  6 09:37:10 xubuntu systemd[1]: Started CUPS Scheduler.
+Dec  6 09:37:10 xubuntu systemd[1]: Reloading.
+Dec  6 09:37:10 xubuntu systemd[1]: snapd.refresh.timer: Adding 4h 38min 43.853986s random time.
+Dec  6 09:37:10 xubuntu systemd[1]: Started ACPI event daemon.
+Dec  6 09:37:10 xubuntu systemd[1]: Started CUPS Scheduler.
+Dec  6 09:37:10 xubuntu systemd[1]: Starting Security Auditing Service...
+Dec  6 09:37:10 xubuntu auditd[12093]: Started dispatcher: /sbin/audispd pid: 12098
+Dec  6 09:37:10 xubuntu audispd: priority_boost_parser called with: 4
+Dec  6 09:37:10 xubuntu audispd: max_restarts_parser called with: 10
+Dec  6 09:37:10 xubuntu audispd: No plugins found, exiting
+Dec  6 09:37:10 xubuntu auditctl[12095]: No rules
+Dec  6 09:37:10 xubuntu auditctl[12095]: enabled 0
+Dec  6 09:37:10 xubuntu auditctl[12095]: failure 1
+Dec  6 09:37:10 xubuntu auditctl[12095]: pid 0
+Dec  6 09:37:10 xubuntu auditctl[12095]: rate_limit 0
+Dec  6 09:37:10 xubuntu auditctl[12095]: backlog_limit 320
+Dec  6 09:37:10 xubuntu auditctl[12095]: lost 0
+Dec  6 09:37:10 xubuntu auditctl[12095]: backlog 0
+Dec  6 09:37:10 xubuntu auditctl[12095]: backlog_wait_time 15000
+Dec  6 09:37:10 xubuntu kernel: [ 3829.696796] audit: type=1305 audit(1481017030.454:2): audit_pid=12093 old=0 auid=4294967295 ses=4294967295 res=1
+Dec  6 09:37:10 xubuntu systemd[1]: Started Security Auditing Service.
+Dec  6 09:37:10 xubuntu auditd[12093]: Init complete, auditd 2.4.5 listening for events (startup state enable)
+Dec  6 09:37:10 xubuntu systemd[1]: Reloading.
+Dec  6 09:37:10 xubuntu systemd[1]: snapd.refresh.timer: Adding 1h 57min 40.300362s random time.
+Dec  6 09:37:10 xubuntu systemd[1]: Started ACPI event daemon.
+Dec  6 09:37:10 xubuntu systemd[1]: Started CUPS Scheduler.
+Dec  6 09:37:11 xubuntu systemd[1]: Stopping Security Auditing Service...
+Dec  6 09:37:11 xubuntu auditd[12093]: The audit daemon is exiting.
+Dec  6 09:37:11 xubuntu kernel: [ 3830.641617] audit: type=1305 audit(1481017031.398:4): audit_pid=0 old=12093 auid=4294967295 ses=4294967295 res=1
+Dec  6 09:37:11 xubuntu systemd[1]: Stopped Security Auditing Service.
+Dec  6 09:37:11 xubuntu kernel: [ 3830.641961] audit: type=1130 audit(1481017031.402:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=auditd comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec  6 09:37:11 xubuntu kernel: [ 3830.641970] audit: type=1131 audit(1481017031.402:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=auditd comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec  6 09:37:11 xubuntu systemd[1]: Starting Security Auditing Service...
+Dec  6 09:37:11 xubuntu auditd[12244]: Started dispatcher: /sbin/audispd pid: 12249
+Dec  6 09:37:11 xubuntu audispd: priority_boost_parser called with: 4
+Dec  6 09:37:11 xubuntu auditctl[12246]: Error sending add rule data request (No such file or directory)
+Dec  6 09:37:11 xubuntu auditctl[12246]: There was an error in line 19 of /etc/audit/audit.rules
+Dec  6 09:37:11 xubuntu audispd: max_restarts_parser called with: 10
+Dec  6 09:37:11 xubuntu audispd: No plugins found, exiting
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750820] audit: type=1305 audit(1481017031.510:7): auid=4294967295 ses=4294967295 op="add_rule" key="time-change" list=4 res=1
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750839] audit: type=1305 audit(1481017031.510:8): auid=4294967295 ses=4294967295 op="add_rule" key="time-change" list=4 res=1
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750883] audit: type=1305 audit(1481017031.510:9): auid=4294967295 ses=4294967295 op="add_rule" key="time-change" list=4 res=1
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750897] audit: type=1305 audit(1481017031.510:10): auid=4294967295 ses=4294967295 op="add_rule" key="identity" list=4 res=1
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750909] audit: type=1305 audit(1481017031.510:11): auid=4294967295 ses=4294967295 op="add_rule" key="identity" list=4 res=1
+Dec  6 09:37:11 xubuntu kernel: [ 3830.750920] audit: type=1305 audit(1481017031.510:12): auid=4294967295 ses=4294967295 op="add_rule" key="identity" list=4 res=1
+Dec  6 09:37:11 xubuntu systemd[1]: Started Security Auditing Service.
+Dec  6 09:37:11 xubuntu auditd[12244]: Init complete, auditd 2.4.5 listening for events (startup state enable)
+Dec  6 09:37:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:38:14 xubuntu dbus[3931]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Dec  6 09:38:14 xubuntu systemd[1]: Starting Hostname Service...
+Dec  6 09:38:14 xubuntu dbus[3931]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec  6 09:38:14 xubuntu systemd[1]: Started Hostname Service.
+Dec  6 09:39:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:40:39 xubuntu dbus[3931]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Dec  6 09:40:39 xubuntu systemd[1]: Starting Hostname Service...
+Dec  6 09:40:39 xubuntu dbus[3931]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec  6 09:40:39 xubuntu systemd[1]: Started Hostname Service.
+Dec  6 09:41:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:43:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:45:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:47:26 xubuntu dbus[3931]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Dec  6 09:47:26 xubuntu systemd[1]: Starting Hostname Service...
+Dec  6 09:47:26 xubuntu dbus[3931]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec  6 09:47:26 xubuntu systemd[1]: Started Hostname Service.
+Dec  6 09:47:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:49:32 xubuntu systemd[1]: Stopping Security Auditing Service...
+Dec  6 09:49:32 xubuntu auditd[12244]: The audit daemon is exiting.
+Dec  6 09:49:32 xubuntu systemd[1]: Stopped Security Auditing Service.
+Dec  6 09:49:32 xubuntu kernel: [ 4571.776756] audit_printk_skb: 27 callbacks suppressed
+Dec  6 09:49:32 xubuntu kernel: [ 4571.776758] audit: type=1305 audit(1481017772.508:49): audit_pid=0 old=12244 auid=4294967295 ses=4294967295 res=1
+Dec  6 09:49:32 xubuntu kernel: [ 4571.777254] audit: type=1131 audit(1481017772.508:50): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=auditd comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec  6 09:49:32 xubuntu systemd[1]: Starting Security Auditing Service...
+Dec  6 09:49:32 xubuntu auditd[12788]: Started dispatcher: /sbin/audispd pid: 12792
+Dec  6 09:49:32 xubuntu auditctl: Syscall name unknown: stime
+Dec  6 09:49:32 xubuntu auditctl: There was an error in line 3 of /etc/audit/audit.rules
+Dec  6 09:49:32 xubuntu audispd: priority_boost_parser called with: 4
+Dec  6 09:49:32 xubuntu audispd: max_restarts_parser called with: 10
+Dec  6 09:49:32 xubuntu audispd: No plugins found, exiting
+Dec  6 09:49:32 xubuntu systemd[1]: Started Security Auditing Service.
+Dec  6 09:49:32 xubuntu kernel: [ 4571.875577] audit: type=1130 audit(1481017772.608:51): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=auditd comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Dec  6 09:49:32 xubuntu kernel: [ 4571.876926] audit: type=1305 audit(1481017772.608:52): audit_enabled=1 old=1 auid=4294967295 ses=4294967295 res=1
+Dec  6 09:49:32 xubuntu kernel: [ 4571.876932] audit: type=1305 audit(1481017772.608:53): audit_pid=12788 old=0 auid=4294967295 ses=4294967295 res=1
+Dec  6 09:49:32 xubuntu auditd[12788]: Init complete, auditd 2.4.5 listening for events (startup state enable)
+Dec  6 09:49:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:51:22 xubuntu dbus[3931]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Dec  6 09:51:22 xubuntu systemd[1]: Starting Hostname Service...
+Dec  6 09:51:22 xubuntu dbus[3931]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec  6 09:51:22 xubuntu systemd[1]: Started Hostname Service.
+Dec  6 09:51:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:53:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:55:47 xubuntu dbus[3931]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Dec  6 09:55:47 xubuntu systemd[1]: Starting Hostname Service...
+Dec  6 09:55:47 xubuntu dbus[3931]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Dec  6 09:55:47 xubuntu systemd[1]: Started Hostname Service.
+Dec  6 09:55:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+Dec  6 09:57:48 xubuntu puppet-agent[10394]: Could not request certificate: Failed to open TCP connection to puppet:8140 (getaddrinfo: No address associated with hostname)
+
+==> /proc/uptime <==
+5185.18 20062.23
+
+==> /etc/lsb-release <==
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04.1 LTS"
